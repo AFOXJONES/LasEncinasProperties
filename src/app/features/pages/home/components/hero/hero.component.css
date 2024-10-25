@@ -1,0 +1,23 @@
+.hero-banner {
+  height: 500px; /* Altura del banner (ajustable) */
+  position: relative; /* Para el posicionamiento del overlay */
+  overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
+.hero-banner img {
+  position: absolute; /* Posiciona la imagen en el contenedor */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  min-height: 100%; /* Asegura que cubra la altura del contenedor */
+  object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+  transform: translate(-50%, -50%); /* Centra la imagen */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+  padding: 20px; /* Espaciado alrededor del texto */
+  position: relative; /* Para asegurar que esté sobre la imagen */
+  z-index: 1; /* Asegura que el texto esté encima de la imagen */
+}
