@@ -1,0 +1,27 @@
+<div class="search-bar">
+  <!-- Selector de tipo de operación -->
+  <div class="operation-selector">
+    <button
+      class="option"
+      [ngClass]="{ 'active': selectedOption === 'comprar' }"
+      (click)="selectOption('comprar')">
+      Comprar
+    </button>
+    <button
+      class="option"
+      [ngClass]="{ 'active': selectedOption === 'alquilar' }"
+      (click)="selectOption('alquilar')">
+      Alquilar
+    </button>
+  </div>
+
+  <!-- Campos de entrada -->
+  <div class="input-group">
+    <input type="text" placeholder="Ubicación" class="input-field" />
+    <input type="number" placeholder="Precio mínir" class="input-field" />
+    <input type="number" placeholder="Precio máxir" class="input-field" />
+    <button class="search-button">
+      <i class="fas fa-search"></i> Buscar
+    </button>
+  </div>
+</div>

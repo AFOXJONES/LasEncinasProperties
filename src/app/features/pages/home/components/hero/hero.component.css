@@ -2,6 +2,7 @@
   height: 500px; /* Altura del banner (ajustable) */
   position: relative; /* Para el posicionamiento del overlay */
   overflow: hidden; /* Evitar que el contenido se desborde */
+  margin-bottom: 20px;
 }
 
 .hero-banner img {
@@ -20,4 +21,14 @@
   padding: 20px; /* Espaciado alrededor del texto */
   position: relative; /* Para asegurar que esté sobre la imagen */
   z-index: 1; /* Asegura que el texto esté encima de la imagen */
+}
+
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 200px; /* Altura del banner (ajustable) */
+    position: relative; /* Para el posicionamiento del overlay */
+    overflow: hidden; /* Evitar que el contenido se desborde */
+    margin-bottom: 5px;
+  }
 }

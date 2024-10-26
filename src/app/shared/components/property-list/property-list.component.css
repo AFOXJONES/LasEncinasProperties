@@ -1,0 +1,9 @@
+.property-list {
+  display: flex; /* Habilita el modelo de caja flexible */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si es necesario */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  padding: 20px; /* Espaciado interno del contenedor */
+  max-width: 1600px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor dentro de su contenedor padre */
+}

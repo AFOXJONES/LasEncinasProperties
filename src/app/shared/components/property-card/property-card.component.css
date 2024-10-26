@@ -1,0 +1,84 @@
+/* Estilos generales del contenedor */
+.property-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px;
+  margin: 20px; /* Añade un margen externo de 20px alrededor del componente */
+  background-color: #f8f8f8;
+}
+
+/* Imagen de la propiedad */
+.property-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Títulos y textos */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6e6e6e;
+}
+
+.property-type {
+  color: #b3a89a;
+  font-size: 0.9rem;
+}
+
+.property-price {
+  color: #857870;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Detalles de la propiedad */
+.property-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #857870;
+  font-size: 0.9rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.detail i {
+  color: #b3a89a;
+}
+
+/* Botones */
+.btn-outline-secondary {
+  color: #857870;
+  border-color: #857870;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #857870;
+  color: #fff;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  color: #857870;
+  float: right;
+  margin-top: 5%;
+  font-size: 1.2rem;
+}
+
+.favorite-button:hover {
+  color: #b3a89a;
+}
+
+.details{
+  float: left;
+  margin:5px;
+  font-size: 1.2rem;
+}

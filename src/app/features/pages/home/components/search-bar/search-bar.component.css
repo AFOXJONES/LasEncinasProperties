@@ -1,0 +1,73 @@
+/* Estilo principal del contenedor */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 97%;
+  margin: auto;
+}
+
+/* Estilos para el selector de operación (comprar/alquilar) */
+.operation-selector {
+  display: flex;
+  width: 100%;
+}
+
+.option {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #e6dfd8;
+  color: #6e6e6e;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.option.active {
+  background-color: #857870; /* Marrón oscuro para el botón activo */
+  color: #fff;
+}
+
+.option:not(.active):hover {
+  background-color: #d8cdc3;
+}
+
+/* Estilos de los campos de entrada */
+.input-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  background-color: #fdfbf7;
+}
+
+/* Estilos del botón de búsqueda */
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  background-color: #857870;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-button i {
+  font-family: FontAwesome;
+}

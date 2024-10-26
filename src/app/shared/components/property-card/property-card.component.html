@@ -1,0 +1,34 @@
+<div class="property-card card">
+  <!-- Imagen de la propiedad -->
+  <img src={{property.imageUrl}} alt="Imagen de la propiedad" class="card-img-top property-image" />
+
+  <!-- Detalles de la propiedad -->
+  <div class="card-body">
+    <h5 class="card-title">{{property.title}}</h5>
+    <p class="property-type">{{property.type}}</p>
+    <p class="property-price">{{property.price}}</p>
+
+    <div class="property-details row">
+      <div class="col-5 detail">
+        <i class="fas fa-expand-arrows-alt"></i> {{property.area}}
+      </div>
+      <div class="col-5 detail">
+        <i class="fas fa-bed"></i> {{property.rooms}}
+      </div>
+      <div class="col-5 detail">
+        <i class="fas fa-building"></i> {{property.floors}}
+      </div>
+      <div class="col-5 detail">
+        <i class="fas fa-bath"></i> {{property.bathrooms}}
+      </div>
+    </div>
+
+
+  </div>
+  <div class="details">
+    <button class="btn btn-outline-secondary mt-3 details">Ver Detalles</button>
+    <button class="btn favorite-button" title="Agregar a favoritos">
+      <i class="fas fa-heart"></i>
+    </button>
+  </div>
+</div>
