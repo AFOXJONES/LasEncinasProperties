@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   properties = [
     {
+      id:1,
       title: 'Villa de Lujo en La Costa',
       type:'Alquiler',
       price: '€2,500,000',
@@ -18,6 +19,7 @@ export class HomeComponent {
       imageUrl: 'assets/img/casa1.jpg'
     },
     {
+      id:2,
       title: 'Apartamento en la Ciudad',
       type:'Venta',
       price: '€1,200,000',
@@ -28,6 +30,7 @@ export class HomeComponent {
       imageUrl: 'assets/img/casa1.jpg'
     },
     {
+      id:3,
       title: 'Apartamento en la Ciudad',
       type:'Venta',
       price: '€1,200,000',
@@ -38,6 +41,7 @@ export class HomeComponent {
       imageUrl: 'assets/img/casa1.jpg'
     },
     {
+      id:4,
       title: 'Apartamento en la Ciudad',
       type:'Venta',
       price: '€1,200,000',
