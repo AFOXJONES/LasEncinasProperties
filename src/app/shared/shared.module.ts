@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PropertyCardComponent } from './components/property-card/property-card.component';
 import { PropertyListComponent } from './components/property-list/property-list.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,7 +12,8 @@ import { PropertyListComponent } from './components/property-list/property-list.
     PropertyListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
     PropertyCardComponent,
