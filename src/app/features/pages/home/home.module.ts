@@ -7,6 +7,7 @@ import { SharedModule } from '../../../shared/shared.module';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +23,8 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   exports:[
     HomeComponent

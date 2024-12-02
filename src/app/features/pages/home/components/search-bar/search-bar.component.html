@@ -17,10 +17,27 @@
 
   <!-- Campos de entrada -->
   <div class="input-group">
-    <input type="text" placeholder="Ubicación" class="input-field" />
-    <input type="number" placeholder="Precio mínir" class="input-field" />
-    <input type="number" placeholder="Precio máxir" class="input-field" />
-    <button class="search-button">
+    <input
+      type="text"
+      placeholder="Ubicación"
+      class="input-field"
+      [(ngModel)]="location"
+    />
+    <input
+      type="number"
+      placeholder="Precio mín."
+      class="input-field"
+      [(ngModel)]="minPrice"
+    />
+    <input
+      type="number"
+      placeholder="Precio máx."
+      class="input-field"
+      [(ngModel)]="maxPrice"
+    />
+    <button
+      class="search-button"
+      (click)="applyFilter()">
       <i class="fas fa-search"></i> Buscar
     </button>
   </div>
