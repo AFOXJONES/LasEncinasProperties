@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PropertyService } from './services/property.service';
 
 @Component({
   selector: 'app-home',
@@ -6,52 +7,18 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  properties = [
-    {
-      id:1,
-      title: 'Villa de Lujo en La Costa',
-      type:'Alquiler',
-      price: '€2,500,000',
-      area: '350 m²',
-      rooms: 5,
-      floors: 2,
-      bathrooms: 4,
-      imageUrl: 'assets/img/casa1.jpg'
-    },
-    {
-      id:2,
-      title: 'Apartamento en la Ciudad',
-      type:'Venta',
-      price: '€1,200,000',
-      area: '120 m²',
-      rooms: 3,
-      floors: 1,
-      bathrooms: 2,
-      imageUrl: 'assets/img/casa1.jpg'
-    },
-    {
-      id:3,
-      title: 'Apartamento en la Ciudad',
-      type:'Venta',
-      price: '€1,200,000',
-      area: '120 m²',
-      rooms: 3,
-      floors: 1,
-      bathrooms: 2,
-      imageUrl: 'assets/img/casa1.jpg'
-    },
-    {
-      id:4,
-      title: 'Apartamento en la Ciudad',
-      type:'Venta',
-      price: '€1,200,000',
-      area: '120 m²',
-      rooms: 3,
-      floors: 1,
-      bathrooms: 2,
-      imageUrl: 'assets/img/casa1.jpg'
-    },
+  properties: any;
 
-    // Agrega más propiedades según sea necesario
-  ];
+  constructor(private propertySrvice: PropertyService) {}
+
+  ngOnInit(): void {
+    this.propertySrvice.getProperties().subscribe({
+      next: (response) => {
+        this.properties = response;
+      },
+      error: (err) => {
+        console.error('Error fetching data:', err);
+      }
+    });
+  }
 }
