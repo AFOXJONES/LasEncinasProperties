@@ -4,16 +4,16 @@
 
   <!-- Detalles de la propiedad -->
   <div class="card-body">
-    <h5 class="card-title">{{property.titulo}}</h5>
-    <p class="property-type">{{property.descripcion}}</p>
-    <p class="property-price">{{property.precio | currency:'EUR'}}</p>
+    <h5 class="card-title">{{property.name}}</h5>
+    <p class="property-type">{{property.description}}</p>
+    <p class="property-price">{{property.price | currency:'EUR'}}</p>
 
     <div class="property-details row">
       <div class="col-5 detail">
-        <i class="fas fa-expand-arrows-alt"></i> {{property.area}}
+        <i class="fas fa-expand-arrows-alt"></i> {{property.squareMeters}}
       </div>
       <div class="col-5 detail">
-        <i class="fas fa-bed"></i> {{property.rooms}}
+        <i class="fas fa-bed"></i> {{property.bedrooms}}
       </div>
       <div class="col-5 detail">
         <i class="fas fa-building"></i> {{property.floors}}

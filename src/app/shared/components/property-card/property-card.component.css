@@ -4,7 +4,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 400px;
+  max-width: 350px;
+  min-width: 350px;
   margin: 20px; /* Añade un margen externo de 20px alrededor del componente */
   background-color: #f8f8f8;
 }

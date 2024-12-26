@@ -20,5 +20,6 @@ export class HomeComponent {
         console.error('Error fetching data:', err);
       }
     });
+
   }
 }
