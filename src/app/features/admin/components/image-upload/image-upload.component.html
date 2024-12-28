@@ -1,0 +1,26 @@
+<!-- image-upload.component.html -->
+<div class="container">
+  <h2>Subir Imágenes</h2>
+  <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="imageUpload">Selecciona las imágenes:</label>
+      <input
+        type="file"
+        id="imageUpload"
+        (change)="onFilesSelected($event)"
+        multiple
+        class="form-control"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!selectedFiles.length">
+      Subir imágenes
+    </button>
+  </form>
+
+  <div *ngIf="selectedFiles.length > 0" class="mt-4">
+    <h4>Imágenes seleccionadas:</h4>
+    <ul>
+      <li *ngFor="let file of selectedFiles">{{ file.name }}</li>
+    </ul>
+  </div>
+</div>

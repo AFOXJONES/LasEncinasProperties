@@ -9,10 +9,10 @@ import { PropertyService } from './services/property.service';
 export class HomeComponent {
   properties: any;
 
-  constructor(private propertySrvice: PropertyService) {}
+  constructor(private propertyService: PropertyService) {}
 
   ngOnInit(): void {
-    this.propertySrvice.getProperties().subscribe({
+    this.propertyService.getProperties().subscribe({
       next: (response) => {
         this.properties = response;
       },
